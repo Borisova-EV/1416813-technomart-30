@@ -43,7 +43,7 @@
         <a  class="login-link new-login-link" href="#">Регистрация</a>
       </div>
       <nav  class="main-navigation">
-        <ul class="site-navigation menu-list">
+        <ul class="site-navigation ">
           <li class="site-navigation-item"><a>Главная</a></li>
           <li class="site-navigation-item"><a href="#">Компания</a></li>
           <li class="site-navigation-item"><a href="#">Каталог</a></li>
@@ -55,32 +55,36 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Главная страница магазина "Техномарт"</h1>
+      <h1 class="visually-hidden">Главная страница магазина "Техномарт"</h1>
       <section  class="menu">
-        <h2>Меню</h2>
+        <h2 class="visually-hidden">Меню</h2>
         <ul class="menu-nav">
-          <li class="materials">
+          <li class="menu-nav-item  materials">
             <h3>Материалы</h3>
             <a  class="menu-btn" href="#">на любой вкус</a>
           </li>
-          <li class="tools">
+          <li class="menu-nav-item tools">
             <h3>Инструмент</h3>
             <a  class="menu-btn" href="#">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li class="technic">
+          <li class="menu-nav-item  technic">
             <h3>Техника</h3>
             <a  class="menu-btn" href="#">для стройки</a>
           </li>
           <li class="promo">
             <div  class="slider slider-1">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
+              <div  class="container-title">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
               <img  src="img/slide/perforator.jpg"  width="620" height="266"  alt="Человек в строительной униформе работает перфоратором Bosh."/>
               <a  class="btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
             <div  class="slider slider-2">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
+              <div  class="container-title">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+              </div>
               <img  src="img/slide/drill.jpg" width="620" height="266"  alt="Человек в строительной униформе работает дрелью Bosh."/>
               <a  class="btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
@@ -93,11 +97,11 @@
               <button type="button">Слайд-2</button>
             </div>
           </li>
-          <li class="sale">
+          <li class="menu-nav-item  sale">
             <h3>Скидки 50%</h3>
             <a  class="menu-btn" href="#">На 350 ТОВАРОВ</a>
           </li>
-          <li class="delivery">
+          <li class="menu-nav-item  delivery">
             <h3>Доставка</h3>
             <a  class="menu-btn" href="#">Бесплатно</a>
           </li>
@@ -105,7 +109,7 @@
       </section>
       <section  class="products">
         <div  class="popular-container">
-          <h2>Популярные товары:</h2>
+          <h2 class="title">Популярные товары:</h2>
           <a class="btn" href="#">все популярные товары</a>
         </div>
         <ul class="products-list" >
@@ -117,8 +121,8 @@
               <p  class="price  new-price">25500 Р.</p>
             </a>
             <div  class="hover-menu">
-              <button class="menu-btn hover-btn hover-btn-cart" type="button">КУПИТЬ</button>
-              <button class="menu-btn hover-btn hover-btn-bookmark" type="button">В закладки</button>
+              <button class="menu-btn hover-btn-cart" type="button">КУПИТЬ</button>
+              <button class="menu-btn hover-btn-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="products-item">
@@ -161,7 +165,7 @@
       </section>
       <section  class="brands">
         <div  class="popular-container">
-          <h2>Популярные производители:</h2>
+          <h2 class="title">Популярные производители:</h2>
           <a  class="btn" href="#">все производители</a>
         </div>
         <ul class="brands-list">
@@ -208,7 +212,7 @@
         </ul>
       </section>
       <section  class="service">
-        <h2>Сервисы</h2>
+        <h2 class="title">Сервисы</h2>
         <p  class="text">
           Хороший интернет-магазин отличается от плохого не только ценами!<br />
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -249,7 +253,7 @@
         </ul>
       </section>
       <section  class="about">
-        <h2>КОМПАНИЯ «Техномарт»</h2>
+        <h2 class="title">КОМПАНИЯ «Техномарт»</h2>
         <p  class="text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушными любителей сэкономить
@@ -267,7 +271,7 @@
         <a  class="btn" href="#">Подробнее о компании</a>
       </section>
       <section  class="contacts">
-        <h2>КОНТАКТЫ</h2>
+        <h2 class="title">КОНТАКТЫ</h2>
         <p  class="text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <img  src="img/maps/map-small.png"  width="300" height="158"  alt="Магазин Техномарт на карте."/>
         <button class="btn" type="button">Заблудились? Напишите НАМ!</button>
@@ -277,7 +281,7 @@
       <a  class="footer-logo">
         <img  src="img/logo/logo-technomart-footer.svg" width="108" height="18" alt="Логотип магазина «Техномарт»."/>
       </a>
-      <ul class="footer-nav menu-list">
+      <ul class="footer-nav">
         <li class="footer-nav-item">
           <a href="#">Компания</a>
         </li>
@@ -298,7 +302,7 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br />
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </p>
-      <ul class="footer-menu-nav  menu-list">
+      <ul class="footer-menu-nav">
         <li class="footer-menu-item">
           <a href="#">Материалы</a>
         </li>
