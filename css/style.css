@@ -5,6 +5,8 @@
   --dark-2:  #32425C;
   --dark-3: #1D2739;
   --dark-4: #161D29;
+  --dark-5: #405069;
+  --dark-6: #212A3A;
     /*  neutral-palette */
   --neutral-1: #F9F5F0;
   --neutral-2: #F1F5F7;
@@ -104,7 +106,7 @@ img {
   line-height: 24px;
   color: var(--white);
   }
-.main-header-logo {
+.logo {
   background-color: var(--red-1);
   box-shadow: inset 0px -5px 0px rgba(var(--black-rgb), 0.24);
 }
@@ -296,6 +298,10 @@ color:  var(--white);
   color:  var(--white);
   background-color: var(--red-1);
 }
+/*hover item catalog  */
+.products-item  a:hover {
+  border: 1px solid var(--neutral-6);
+}
 /*  pop-up menu item  */
 .popup-menu {
   font-family: "Cuprum",  "Arial", sans-serif;
@@ -331,10 +337,118 @@ outline: none;
   border-color: var(--dark-2);
   opacity: 0.5;
 }
-/* brands-cart  */
-.brands-item  {
-  border:  none;
+/* brands card */
+.brands-item  a:hover{
+  filter: drop-shadow(0px 4px 20px rgba(var(--black-rgb), 0.15));
 }
-.brands-item  a  {
-  background-color: var(--white);
+.brands-item  a:active{
+  background-color: rgba(var(--black-rgb), 0,0001)); /*не получилось добиться эффекта как на макете*/
+}
+/*section service */
+.service  {
+  background-color: var(--neutral-2);
+}
+.service h2,
+.about  .title,
+.contacts .title  {
+  color:  var(--black);
+}
+
+.service-item a {
+  display: block;
+  background-color: var(--dark-2);
+  box-shadow: 0px 1px 0px var(--dark-1), inset 0px 1px 0px var(--dark-5);
+  font-family: "Cuprum",  "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color:  var(--white);
  }
+/* current  type of service */
+.current-service  a{
+  background-color: var(--white);
+  box-shadow: 0px 1px 0px var(--white);
+  color: var(--dark-2);
+}
+.service-item a:hover {
+  background: var(--dark-1);
+  box-shadow: 0px 1px 0px var(--dark-1), inset 0px 1px 0px var(--dark-5);
+}
+.transport-item {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  }
+  /* footer */
+  /*  footer-background */
+.main-footer  {
+  background-color: var(--dark-2);
+  font-family: "Cuprum",  "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.footer-container {
+  background-color: var(--dark-1);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+.footer-nav-item  a  {
+  color: var(--neutral-2);
+}
+.footer-menu-item a{
+  color:  var(--yellow-3);
+}
+.footer-contacts  {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-3)
+}
+.footer-contacts  a{
+  font: inherit;
+  color:  inherit;
+}
+.copy {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+/*social-link*/
+.social-item  a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--dark-6);
+  border-radius: 50%;
+}
+.feedback a,
+.developer  a{
+  font: inherit;
+  color: var(--yellow-3);
+}
+/* state footer-link */
+.footer-nav-item  a:hover,
+.footer-menu-item  a:hover {
+  text-decoration:  underline;
+}
+.footer-nav-item  a:active,
+.footer-menu-item  a:active  {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.social-item  a:hover,
+.social-item  a:active{
+  background-color: var(--red-1);
+}
+.feedback a:hover,
+.developer  a:hover {
+  text-decoration: underline;
+}
+.feedback a:active,
+.developer  a:active{
+  text-decoration: none;
+  color: var(--red-1);
+}
