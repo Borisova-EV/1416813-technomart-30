@@ -161,7 +161,7 @@ img {
 }
 
 .header-container .container-center {
-  grid-template-columns: min-content 1fr min-content min-content min-content;
+  grid-template-columns:  220px 1fr repeat(3, 150px);
 }
 
 /*  Search  */
@@ -205,8 +205,7 @@ img {
 .link {
   width: 150px;
   color: var(--white);
-  justify-self: end;
-}
+  }
 
 .link:active {
   background-color: var(--dark-4);
@@ -286,7 +285,7 @@ img {
   max-height: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(7, min-content);
+  grid-template-columns: repeat(7,  auto);
   column-gap: 55px;
 
 }
@@ -523,7 +522,7 @@ img {
 }
 
 .brands-item a:active {
-  background-color: rgba(var(--black-rgb), 0, 01);
+  background-color: rgba(var(--black-rgb), 0.01);
 
 }
 
