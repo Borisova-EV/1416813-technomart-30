@@ -120,7 +120,6 @@ img {
 .container-center {
   width: 940px;
   margin: 0 auto;
-
 }
 
 /* status-button */
@@ -207,7 +206,7 @@ img {
 .link {
   width: 150px;
   color: var(--white);
-}
+  }
 
 .link:active {
   background-color: var(--dark-4);
