@@ -626,7 +626,7 @@ img {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: repeat(5, min-content);
+  grid-template-columns: repeat(5, auto);
   column-gap: 58px;
   padding-left: 0;
 
@@ -638,7 +638,8 @@ img {
 
 .footer-menu-nav {
   display: grid;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(4, auto);
+  justify-self: end;
   column-gap: 58px;
   padding-left: 22px;
 }
