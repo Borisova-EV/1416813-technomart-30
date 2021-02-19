@@ -1316,6 +1316,7 @@ img {
 
 }
 
+
 .user-link:hover {
   color: var(--red-1);
 }
@@ -1324,7 +1325,6 @@ img {
 .user-link:active {
   color: var(--neutral-4);
 }
-
 .user-link:first-child {
   margin-right: 30px;
 }
