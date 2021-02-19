@@ -211,7 +211,8 @@ img {
   opacity: 1;
   font-family: "Cuprum", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 24px;
+
+
 }
 
 .search:-ms-input-placeholder {
@@ -260,7 +261,7 @@ img {
   position: absolute;
   width: 14px;
   height: 16px;
-  background-image: url("/img/icon/icon-bookmark.svg");
+  background-image: url("../img/icon/icon-bookmark.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: 13px;
@@ -273,7 +274,7 @@ img {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url("/img/icon/icon-cart.svg");
+  background-image: url("../img/icon/icon-cart.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: 13px;
@@ -354,7 +355,7 @@ img {
   position: absolute;
   width: 17px;
   height: 19px;
-  background-image: url(/img/icon/icon-phone.svg);
+  background-image: url("../img/icon/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 30px;
@@ -507,31 +508,31 @@ img {
 }
 
 .materials::after {
-  background-image: url("/img/icon/icon-material.svg");
+  background-image: url("../img/icon/icon-material.svg");
   width: 44px;
   height: 65px;
 }
 
 .tools::after {
-  background-image: url("/img/icon/icon-tools.svg");
+  background-image: url("../img/icon/icon-tools.svg");
   width: 75px;
   height: 61px;
 }
 
 .technic::after {
-  background-image: url("/img/icon/icon-techniс.svg");
+  background-image: url("../img/icon/icon-techniс.svg");
   width: 78px;
   height: 62px;
 }
 
 .sale::after {
-  background-image: url("/img/icon/icon-sale.svg");
+  background-image: url("../img/icon/icon-sale.svg");
   width: 59px;
   height: 72px;
 }
 
 .delivery::after {
-  background-image: url("/img/icon/icon-delivery.svg");
+  background-image: url("../img/icon/icon-delivery.svg");
   width: 78px;
   height: 63px;
 }
@@ -541,7 +542,7 @@ img {
   content: "";
   width: 70px;
   height: 70px;
-  background-image: url("/img/decors/new.png");
+  background-image: url("../img/decors/new.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   position: absolute;
@@ -646,7 +647,7 @@ img {
   width: 22px;
   height: 40px;
   top: 115px;
-  background-image: url("/img/decors/icon-left.png");
+  background-image: url("../img/decors/icon-left.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -774,7 +775,7 @@ img {
 
 .new-price {
   color: var(--white);
-  background-image: url("/img/decors/red-button.png");
+  background-image: url("../img/decors/red-button.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 141px;
@@ -785,7 +786,7 @@ img {
 }
 
 .new-product {
-  background-image: url("/img/decors/new.png");
+  background-image: url("../img/decors/new.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   position: absolute;
@@ -966,7 +967,7 @@ img {
   position: absolute;
   width: 10px;
   height: 279px;
-  background-image: url("/img/decors/service-line.png");
+  background-image: url("../img/decors/service-line.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: -47px;
@@ -994,18 +995,18 @@ img {
 }
 
 .delivery-service {
-  background-image: url("/img/service/serviсe-delivery.png");
+  background-image: url("../img/service/serviсe-delivery.png");
   background-size: 468px 261px;
 
 }
 
 .guarantee-service {
-  background-image: url("/img/service/serviсe-guarantee.png");
+  background-image: url("../img/service/serviсe-guarantee.png");
   background-size: 389px 283px;
 }
 
 .credit-service {
-  background-image: url("/img/service/serviсe-credit.png");
+  background-image: url("../img/service/serviсe-credit.png");
   background-size: 465px 285px;
 
 }
@@ -1221,17 +1222,17 @@ img {
 }
 
 .vk {
-  background-image: url("/img/icon/icon-vk.svg");
+  background-image: url("../img/icon/icon-vk.svg");
   background-size: 26px 15px;
 }
 
 .fb {
-  background-image: url("/img/icon/icon-fb.svg");
+  background-image: url("../img/icon/icon-fb.svg");
   background-size: 12px 22px;
 }
 
 .instagram {
-  background-image: url("/img/icon/icon-insta.svg");
+  background-image: url("../img/icon/icon-insta.svg");
   background-size: 21px 21px;
 }
 
