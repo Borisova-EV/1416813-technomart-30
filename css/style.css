@@ -56,8 +56,6 @@
   line-height: 24px;
   color: var(--black);
   min-width: 940px;
-  padding-left: 10px;
-  padding-right: 10px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -1326,6 +1324,7 @@ img {
 .user-link:active {
   color: var(--neutral-4);
 }
+
 .user-link:first-child {
   margin-right: 30px;
 }
