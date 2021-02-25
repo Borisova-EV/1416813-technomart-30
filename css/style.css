@@ -22,6 +22,7 @@
   --neutral-10: #D7DCDE;
   --neutral-11: #ABABAB;
   --neutral-12: #B5B5B5;
+  --neutral-13: #F4F4F4;
   /*  red-palette */
   --red-1: #EE3643;
   --red-2: #CA2C37;
@@ -86,6 +87,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .navigation {
@@ -1769,4 +1771,82 @@ img {
 .perforator-info p {
   margin: 0;
   padding-bottom: 68px;
+}
+
+/*modal*/
+
+.modal {
+  box-sizing: border-box;
+  border-top: 7px solid var(--red-1);
+  background-color: var(--white);
+  box-shadow: 0px 4px 20px rgba(var(--black-rgb), 0.15);
+  position: fixed;
+  z-index: 3;
+}
+
+.messege-form-container {
+  margin-top: 46px;
+  margin-bottom: 37px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.modal-feedback {
+  width: 620px;
+  top: 359px;
+  left: 282px;
+}
+
+.messege-form-container label {
+  font-family: "Cuprum", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 11px;
+}
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.messege-form-container input,
+.messege-form-container textarea {
+  border: 2px solid var(--neutral-4);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.messege-form-container input {
+  width: 220px;
+  height: 38px;
+}
+.messege-form-container textarea  {
+  width: 460px;
+  height: 114px;
+}
+.submit-container {
+  background-color: var(--neutral-13);
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+.submit-container button {
+width: 460px;
+box-sizing: border-box;
+border: none;
+outline: none;
+padding-top: 11px;
+padding-bottom: 9px;
+}
+.close-button {
+   width: 21px;
+   height: 21px;
+   background-image: url("../img/decors/icon-close.png");
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   border:none;
+   outline:none;
+   background-color: transparent;
+   position: absolute;
+   top: 14px;
+   right: 11px;
 }
