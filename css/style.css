@@ -949,7 +949,7 @@ img {
 .service {
   background-color: var(--neutral-2);
   margin-bottom: 69px;
-  padding-top: 67px;
+  padding-top: 66px;
 }
 
 .service .container-columns {
@@ -966,12 +966,12 @@ img {
 }
 
 .service h2 {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .about .title,
 .contacts .title {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .service p {
@@ -1100,7 +1100,9 @@ img {
 .container-columns-about {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
+  margin-bottom: 58px;
+  padding-bottom: 10px;
 }
 
 .about {
@@ -1109,18 +1111,21 @@ img {
 
 .text-about p {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
+  padding-top: 3px;
+  box-sizing: border-box;
 }
 
 .text-about p:last-child {
   margin-bottom: 0;
 }
 
+
 .transport-list {
   margin-top: 0;
   padding-left: 37px;
   margin-bottom: 20px;
-}
+  }
 
 /* transport-list decor */
 
@@ -1154,15 +1159,17 @@ img {
 
 /*buttons*/
 .container-columns-about .button {
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .about .button {
   box-sizing: border-box;
   width: 220px;
+  height: 38px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 9px;
 }
 
 .contacts .button {
@@ -1175,10 +1182,11 @@ img {
 .main-footer {
   background-color: var(--dark-2);
   font-family: "Cuprum", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
+ /* padding-top: 1px;*/
 }
 
 .top-footer {
-  min-height: 193px;
+  min-height: 192px;
   display: flex;
   justify-content: space-between;
 }
