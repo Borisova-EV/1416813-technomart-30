@@ -1125,7 +1125,7 @@ img {
   margin-top: 0;
   padding-left: 37px;
   margin-bottom: 20px;
-}
+  }
 
 /* transport-list decor */
 
@@ -2094,3 +2094,4 @@ img {
   background-color: var(--white);
   color: var(--black);
 }
+
