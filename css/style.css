@@ -1686,7 +1686,7 @@ img {
 /*brands-filter*/
 .brands-filter legend,
 .power-filter legend {
-  padding-top: 17px;
+  padding-top: 19px;
 }
 
 .filter-list {
@@ -1711,7 +1711,7 @@ img {
 /*checkbox*/
 .power-filter .filter-list {
   margin-top: 21px;
-  padding-top: 7px;
+  padding-top: 4px;
 }
 
 .filter-input-checkbox+label::before {
@@ -1874,7 +1874,7 @@ img {
   grid-template-columns: repeat(3, 220px);
   margin-top: 6px;
   row-gap: 18px;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
 }
 
 .catalog .products-item {
@@ -1889,7 +1889,7 @@ img {
 
 .pagination-nav {
   margin-top: 48px;
-  margin-bottom: 59px;
+  margin-bottom: 62px;
 }
 
 .pagination-list {
