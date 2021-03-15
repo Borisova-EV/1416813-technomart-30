@@ -1,9 +1,9 @@
 const feedbackButton = document.querySelector(".feedback-button");
 const feedbackModal = document.querySelector(".modal-feedback");
 const feedbackClose = document.querySelector(".close-button");
-const feedbackName = document.querySelector(".feedback-name");
-const feedbackEmail = document.querySelector(".feedback-email");
-const feedbackText = document.querySelector(".feedback-text");
+let feedbackName = document.querySelector(".feedback-name");
+let feedbackEmail = document.querySelector(".feedback-email");
+let feedbackText = document.querySelector(".feedback-text");
 const feedbackForm = document.querySelector(".feedback-form");
 let isStorageSupport = true;
 let storageName = "";
@@ -68,11 +68,9 @@ feedbackClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (feedbackModal.classList.contains("hidden")) {
-      ;
-    } else {
-      evt.preventDefault();
+  if (evt.code === "Escape") {
+    if (!feedbackModal.classList.contains("hidden")) {
+        evt.preventDefault();
       feedbackModal.classList.add("hidden");
       feedbackModal.classList.remove("modal-error");
     }

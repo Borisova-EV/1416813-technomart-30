@@ -13,11 +13,9 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (mapModal.classList.contains("hidden")) {
-      ;
-    } else {
-      evt.preventDefault();
+  if (evt.code === "Escape") {
+    if (!mapModal.classList.contains("hidden")) {
+          evt.preventDefault();
       mapModal.classList.add("hidden");
     }
   }
