@@ -3,7 +3,7 @@ const cart = document.querySelector(".cart-link");
 const cartCounter = document.querySelector(".cart-counter");
 const addCart = document.querySelector(".modal-add-cart");
 const addCartClose = document.querySelector(".close-add-cart");
-counter = "";
+let counter = "";
 
 for (let cartButton of cartButtons) {
   cartButton.addEventListener("click", function () {
@@ -12,17 +12,16 @@ for (let cartButton of cartButtons) {
     cartCounter.textContent = counter;
     addCart.classList.remove("hidden")
   })
-};
+}
 
 addCartClose.addEventListener("click", function (evt) {
-  evt.preventDefault;
+  evt.preventDefault();
   addCart.classList.add("hidden");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.code === "Escape") {
     if (!addCart.classList.contains("hidden")) {
-      evt.preventDefault();
       addCart.classList.add("hidden");
     }
   }
