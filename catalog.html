@@ -36,9 +36,9 @@
           </button>
         </form>
         <a class="link bookmark-link" href="#" aria-label="Посмотреть товары, добавленные в закладки">Закладки:
-          <span>0</span></a>
-        <a class="link cart-link  full-cart" href="#" aria-label="Посмотреть товары, добавленные в корзину">Корзина:
-          <span>10</span></a>
+          <span class="bookmark-counter">0</span></a>
+        <a class="link cart-link  full" href="#" aria-label="Посмотреть товары, добавленные в корзину">Корзина:
+          <span class="cart-counter">10</span></a>
         <a class="link order-link" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -477,8 +477,10 @@
       <a class="button" href="">ОФОРМИТЬ ЗАКАЗ</a>
       <a class="button continue" href="">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     </div>
-    <button type="button" class="close-button" aria-label="Закрыть"></button>
+    <button type="button" class="close-button close-add-cart" aria-label="Закрыть"></button>
   </section>
+  <script src="js/addbookmark.js"></script>
+  <script src="js/addcart.js"></script>
 </body>
 
 </html>

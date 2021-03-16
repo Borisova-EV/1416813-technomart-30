@@ -1,9 +1,9 @@
 const feedbackButton = document.querySelector(".feedback-button");
 const feedbackModal = document.querySelector(".modal-feedback");
 const feedbackClose = document.querySelector(".close-button");
-let feedbackName = document.querySelector(".feedback-name");
-let feedbackEmail = document.querySelector(".feedback-email");
-let feedbackText = document.querySelector(".feedback-text");
+const feedbackName = document.querySelector(".feedback-name");
+const feedbackEmail = document.querySelector(".feedback-email");
+const feedbackText = document.querySelector(".feedback-text");
 const feedbackForm = document.querySelector(".feedback-form");
 let isStorageSupport = true;
 let storageName = "";
@@ -32,9 +32,9 @@ feedbackButton.addEventListener("click", function (evt) {
   if (storageName) {
     feedbackName.value = storageName;
     if (storageEmail) {
-      feedbackEmail = storageEmail;
+      feedbackEmail.value = storageEmail;
       if (storageText) {
-        feedbackText = storageText;
+        feedbackText.value = storageText;
       } else {
         feedbackText.focus();
       }
@@ -49,8 +49,6 @@ feedbackButton.addEventListener("click", function (evt) {
 feedbackForm.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
     evt.preventDefault();
-    feedbackModal.classList.remove("modal-error");
-    feedbackModal.offsetWidth = feedbackModal.offsetWidth;
     feedbackModal.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
@@ -70,7 +68,6 @@ feedbackClose.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.code === "Escape") {
     if (!feedbackModal.classList.contains("hidden")) {
-        evt.preventDefault();
       feedbackModal.classList.add("hidden");
       feedbackModal.classList.remove("modal-error");
     }

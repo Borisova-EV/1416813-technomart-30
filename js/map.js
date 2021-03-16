@@ -15,7 +15,6 @@ mapClose.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.code === "Escape") {
     if (!mapModal.classList.contains("hidden")) {
-          evt.preventDefault();
       mapModal.classList.add("hidden");
     }
   }
