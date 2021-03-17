@@ -1,18 +1,18 @@
 const cartButtons = document.querySelectorAll(".button-cart");
 const cart = document.querySelector(".cart-link");
-const cartCounter = document.querySelector(".cart-counter");
+const cartCounterText = document.querySelector(".cart-counter");
 const addCart = document.querySelector(".modal-add-cart");
 const addCartClose = document.querySelector(".close-add-cart");
-let counter = "";
+let cartCounter = 0;
 
-for (let cartButton of cartButtons) {
+cartButtons.forEach(function (cartButton) {
   cartButton.addEventListener("click", function () {
     cart.classList.add("full");
-    counter++;
-    cartCounter.textContent = counter;
+    cartCounter++;
+    cartCounterText.textContent = cartCounter;
     addCart.classList.remove("hidden")
   })
-}
+})
 
 addCartClose.addEventListener("click", function (evt) {
   evt.preventDefault();

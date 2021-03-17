@@ -1,21 +1,20 @@
 let tabService = document.querySelectorAll(".service-item");
 let tabContent = document.querySelectorAll(".desk-service-item");
-let currentService = document.querySelector(".current-service");
 
 let currentRemove = function () {
-  for (tabServiceItem of tabService) {
+  tabService.forEach(function (tabServiceItem) {
     tabServiceItem.classList.remove("current-service");
-  }
-};
-
-for (let i = 0; i < tabService.length; i++) {
-  tabService[i].addEventListener("click", function (evt) {
-    evt.preventDefault;
-    for (let a = 0; a < tabContent.length; a++) {
-      tabContent[a].classList.add("hidden");
-    }
-    currentRemove();
-    tabContent[i].classList.remove("hidden");
-    tabService[i].classList.add("current-service");
   })
-}
+};
+tabService.forEach(function (tabServiceItem, Index) {
+  tabServiceItem.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    tabContent.forEach(function (tabContentItem) {
+      tabContentItem.classList.add("hidden");
+    });
+    currentRemove();
+    tabServiceItem.classList.remove("current-service");
+    tabContent[Index].classList.remove("hidden");
+    tabService[Index].classList.add("current-service");
+  })
+})

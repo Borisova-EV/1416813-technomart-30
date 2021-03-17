@@ -1,12 +1,12 @@
 const bookmarkButtons = document.querySelectorAll(".button-bookmark");
 const bookmark = document.querySelector(".bookmark-link");
-const bookmarkCounter = document.querySelector(".bookmark-counter");
-let counter = "";
+const bookmarkCounterText = document.querySelector(".bookmark-counter");
+let bookmarkCounter = 0;
 
-for (let bookmarkButton of bookmarkButtons) {
+bookmarkButtons.forEach(function (bookmarkButton) {
   bookmarkButton.addEventListener("click", function () {
-  bookmark.classList.add("full");
-  counter++;
-  bookmarkCounter.textContent = counter;
+    bookmark.classList.add("full");
+    bookmarkCounter++;
+    bookmarkCounterText.textContent = bookmarkCounter;
+  })
 })
-}
