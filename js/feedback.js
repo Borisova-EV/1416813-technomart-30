@@ -49,6 +49,8 @@ feedbackButton.addEventListener("click", function (evt) {
 feedbackForm.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
     evt.preventDefault();
+    feedbackModal.classList.remove("modal-error");
+    feedbackModal.offsetWidth = feedbackModal.offsetWidth;
     feedbackModal.classList.add("modal-error");
   } else {
     if (isStorageSupport) {

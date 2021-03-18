@@ -196,6 +196,10 @@ img {
   height: 47px;
 }
 
+.logo:active {
+  background-color: var(--red-3);
+}
+
 .logo img {
   display: block;
   margin: 12px auto;
@@ -561,7 +565,7 @@ img {
 }
 
 .technic::after {
-  background-image: url("../img/icon/icon-techniс.svg");
+  background-image: url("../img/icon/icon-technic.svg");
   width: 78px;
   height: 62px;
   right: 31px;
@@ -955,7 +959,7 @@ img {
 }
 
 .brands-item a:active {
-  background-color: rgba(var(--black-rgb), 0.01);
+  opacity: 0.5;
 }
 
 /*section service */
@@ -1050,7 +1054,7 @@ img {
 }
 
 .delivery-service {
-  background-image: url("../img/service/serviсe-delivery.png");
+  background-image: url("../img/service/service-delivery.png");
   background-size: 468px 261px;
   background-position: 151px 22px;
 }
@@ -1060,13 +1064,13 @@ img {
 }
 
 .guarantee-service {
-  background-image: url("../img/service/serviсe-guarantee.png");
+  background-image: url("../img/service/service-guarantee.png");
   background-size: 389px 283px;
   background-position: 239px 0;
 }
 
 .credit-service {
-  background-image: url("../img/service/serviсe-credit.png");
+  background-image: url("../img/service/service-credit.png");
   background-size: 465px 285px;
   background-position-x: 164px;
 }
@@ -1308,6 +1312,7 @@ img {
 
 .social-item {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .social-item a {
@@ -1799,9 +1804,10 @@ img {
   background-color: var(--neutral-12);
 }
 
-/* blocked checkbox & radiobutton  */
+/* disabled checkbox & radiobutton  */
 
-.filter-option .blocked {
+.filter-input-checkbox:disabled+label,
+.filter-input-radio:disabled+label {
   opacity: 0.4;
 }
 
@@ -1889,8 +1895,12 @@ img {
   transform: rotate(180deg);
 }
 
-.sort-choice-up path {
+.sort-icon.active path {
   fill: var(--red-1);
+}
+
+.sort-version-choice:hover .sort-icon path {
+  fill: var(--black);
 }
 
 /*  catalog products  */
